@@ -31,5 +31,31 @@
   <footer>
     <p>Contact: <a href="mailto:bala2004murali@gmail.com">bala2004murali@gmail.com</a></p>
   </footer>
+  <script>
+  const toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+</script>
+  <script>
+    // Check local storage for theme preference
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark');
+      toggle.checked = true;
+    }
+
+    // Save theme preference to local storage
+    toggle.addEventListener('change', () => {
+      if (toggle.checked) {
+        document.body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script> 
+</body> 
 </body>
 </html>
