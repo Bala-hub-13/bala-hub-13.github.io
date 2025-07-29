@@ -55,6 +55,26 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+.audio-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0; /* soft gray */
+  border-radius: 12px;
+  padding: 12px 20px;
+  max-width: 400px;
+  margin: 20px auto; /* centers it */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.audio-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
 footer {
   background-color: #fff;
   border-top: 1px solid #ccc;
