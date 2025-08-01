@@ -1,14 +1,14 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #f4f4f4;
-  color: #222;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
 header {
-  background-color: #fff;
+  background-color: #272d45;
   text-align: center;
   padding: 2rem 1rem;
   border-bottom: 1px solid #ccc;
@@ -39,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #0077cc;
+  color: #62d8d6;
 }
 
 main {
@@ -59,7 +59,7 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0; /* soft gray */
+  background-color: #363f50; /* soft gray */
   border-radius: 12px;
   padding: 12px 20px;
   max-width: 400px;
@@ -76,7 +76,7 @@ section h2 {
 }
 
 footer {
-  background-color: #fff;
+  background-color: #394d58;
   border-top: 1px solid #ccc;
   text-align: center;
   padding: 1.5rem 1rem;
