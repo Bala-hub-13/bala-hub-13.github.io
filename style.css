@@ -1,7 +1,7 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #f4f4f4;
-  color: #ffffff;
+  background-color: #66eaf3;
+  color: #4df6f3;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -11,7 +11,7 @@ header {
   background-color: #272d45;
   text-align: center;
   padding: 2rem 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #000000;
 }
 
 header h1 {
