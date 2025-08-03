@@ -13,7 +13,7 @@ small, footer, .audio-caption {
   font-family: 'DM Sans', sans-serif;
 }
 .home .background-cube {
-  background-image: url('cube.png');
+  background-image: url('/cube.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
