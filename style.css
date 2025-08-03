@@ -16,8 +16,8 @@ small, footer, .audio-caption {
   background-image: url('/assets/Cube_1.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 600px;
-  opacity: 0.08;
+  background-size: 800px;
+  opacity: 0.4;
   position: fixed;
   top: 0;
   left: 0;
