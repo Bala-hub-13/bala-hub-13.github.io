@@ -8,6 +8,10 @@ body {
   padding: 2rem;
   line-height: 1.6;
 }
+small, footer, .audio-caption {
+  font-family: 'DM Sans', sans-serif;
+}
+
 
 header {
   background-color: #090505;
@@ -20,6 +24,7 @@ header h1 {
   margin: 0;
   font-size: 2.2rem;
   letter-spacing: 0.05rem;
+   text-shadow: 1px 1px 2px #000;
 }
 
 header p {
@@ -35,7 +40,7 @@ nav {
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #333;
+  color: #eae0d5;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -45,6 +50,8 @@ a {
 }
 
 a:hover {
+    color: #ff8787;
+  text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
   text-decoration: underline;
 }
 
@@ -65,7 +72,8 @@ main {
 
 section h2 {
   font-size: 1.5rem;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #4a3f3f;
+  color: #f4f1ee;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
@@ -86,24 +94,16 @@ section h2 {
   text-align: center;
   font-style: italic;
   font-size: 0.95rem;
-  color: #666;
+  color: #aaa;
   margin-bottom: 8px;
 }
-
 footer {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-  text-align: center;
-  padding: 1.5rem 1rem;
-  font-size: 0.9rem;
-  color: #666;
-  margin-top: 4rem;
+  background-color: #0a0a0a;
+  border-top: 1px solid #333;
+  color: #a8a6a1;
 }
-
 footer a {
-  color: #0077cc;
-  text-decoration: none;
-  margin: 0 0.5rem;
+  color: #ff6b6b;
 }
 
 footer a:hover {
