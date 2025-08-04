@@ -1,32 +1,34 @@
 
 body {
-  background-color: #0a0a0a;
+  background-color: #0a0a0a;/* Dark background */
   color: #f3ebe2;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: auto;
+  line-height: 1.8;/* paragraph spacing  */
+  max-width: 700px;/* Keeps content centered and readable */
+  margin: auto;/* Horizontally center the content */
   padding: 2rem;
 }
 small, footer, .audio-caption {
   font-family: 'DM Sans', sans-serif;
 }
+/* === Background Decoration(Whatever, subject to change) === */
 .home .background-cube {
-  background-image: url('/assets/cube.png');
+  background-image: url('/assets/cube.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 700px;
   opacity: 0.1;
-  position: fixed;
+  position: fixed;/* So it doesn’t scroll with the page */
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 0;
-  pointer-events: none;
+  z-index: 0;/* Places it *behind* all other content */
+  pointer-events: none;/* So it doesn't block clicks or interact */
 }
 
+/* Content sits *above* the background cube */
 .home .content {
   position: relative;
   z-index: 2;
@@ -73,7 +75,7 @@ a:hover {
     color: #ff8787;
   text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
   text-decoration: underline;
-    transform: translateY(-1px);
+  transform: translateY(-1px);/* Slight lift effect */
   transition: all 0.2s ease;
 }
 
@@ -104,7 +106,11 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0a0a0a; /* soft gray */
+  background-color: #0a0a0a; /* Dark background for audio player */
+  color: #f3ebe2;/* added recently*/
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  border: 1px solid #333;
   border-radius: 12px;
   padding: 12px 20px;
   max-width: 400px;
