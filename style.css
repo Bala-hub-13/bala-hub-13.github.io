@@ -124,7 +124,7 @@ section h2 {
   font-size: 0.9rem;
   font-style: italic;
   color: #aaa;
-  margin-bottom: 8px;
+  padding: 8px;
 }
 footer {
   background-color: #0a0a0a;
