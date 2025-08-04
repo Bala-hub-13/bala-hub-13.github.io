@@ -14,7 +14,7 @@ small, footer, .audio-caption {
 }
 /* === Background Decoration(Whatever, subject to change) === */
 .home .background-cube {
-  background-image: url('/assets/Cube_1.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
+  background-image: url('/assets/cube.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 700px;
