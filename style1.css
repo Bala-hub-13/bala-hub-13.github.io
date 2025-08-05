@@ -81,8 +81,8 @@ a:hover {
 
 .nav-pill {
   display: inline-block;
-  padding: 0.3rem 0.8rem;
-  margin: 0.2rem;
+  padding: 0.2rem 0.6rem; /* Padding for the pill shape */
+  margin: 0.2rem;   /* Margin for spacing between pills */
   background-color: #1a1a1a;
   border-radius: 8px;
   font-style: italic;
@@ -149,7 +149,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) {/* Responsive styles for smaller screens */
   body {
     font-size: 16px;
     padding: 1.5rem;
@@ -172,7 +172,7 @@ footer a:hover {
     background-size: 400px;
   }
 }
-.bulletin {
+.bulletin { /* A section for updates */
   margin-top: 1.5rem;
   background-color: #111;
   padding: 1rem;
