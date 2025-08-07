@@ -36,7 +36,7 @@ small, footer, .audio-caption {
 
 
 header {
-  background-color: #0a0a0a;
+  background-color: #000000ff; /* Solid black background */
   text-align: center;
   padding: 2rem 1rem;
   border-bottom: 1px solid #0e0909;
@@ -107,7 +107,7 @@ section h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #0a0a0a; /* Dark background for audio player */
+  background-color: #000000ff; /* Dark background for audio player */
   color: #f3ebe2;/* added recently*/
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
