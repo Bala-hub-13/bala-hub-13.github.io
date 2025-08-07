@@ -24,11 +24,11 @@ small, footer, .audio-caption {
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 0;/* Places it *behind* all other content */
+  z-index: 0;/* Places it behind all other content */
   pointer-events: none;/* So it doesn't block clicks or interact */
 }
 
-/* Content sits *above* the background cube */
+/* Content sits above the background cube */
 .home .content {
   position: relative;
   z-index: 2;
@@ -75,7 +75,7 @@ a:hover {
     color: #ff8787;
   text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
   text-decoration: underline;
-  transform: translateY(-1px);/* Slight lift effect */
+  transform: translateY(-1px);/* lift effect */
   transition: all 0.2s ease;
 }
 
