@@ -127,12 +127,13 @@ section h2 {
   padding: 8px;
 }
 footer {
-  background-color: #0a0a0a;
+  background-color: #000000ff;
   border-top: 1px solid #333;
   color: #a8a6a1;
 }
 footer a {
   color: #ff6b6b;
+  font-family: 'EB Garamond', serif;
 }
 
 footer a:hover {
