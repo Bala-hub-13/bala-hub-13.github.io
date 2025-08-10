@@ -1,7 +1,7 @@
 
 body {
   background-color: #000000ff;/* Dark background */
-  color: #f3ebe2;
+  color: #fcf9f6;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   line-height: 1.8;/* paragraph spacing  */
@@ -51,7 +51,7 @@ header h1 {
 
 header p {
   font-size: 1rem;
-  color: #f4f1ee;
+  color: #f6f4f2;
   margin-top: 0.5rem;
 }
 
