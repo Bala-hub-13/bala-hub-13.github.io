@@ -107,6 +107,7 @@ main {
 
 section h2 {
   font-size: 1.5rem;
+  background-color:#000000ff; /* Dark background for section headers */;
   border-bottom: 1px solid #4a3f3f;
   color: #f4f1ee;
   padding-bottom: 0.5rem;
