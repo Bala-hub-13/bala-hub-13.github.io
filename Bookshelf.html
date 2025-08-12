@@ -1,0 +1,106 @@
+<!--All that I've read but...-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    li {
+      margin: 0.5rem 0;
+      opacity: 0;
+      transform: translateY(5px);
+      animation: fadeIn 0.6s ease forwards;
+      animation-delay: calc(var(--i) * 0.15s);
+      position: relative;
+      cursor: default;
+    }
+    li:hover {
+      text-shadow: 0 0 8px rgba(255, 107, 107, 0.8);
+    }
+    li::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      height: 1px;
+      width: 0;
+      background: rgba(255, 107, 107, 0.8);
+      transition: width 0.3s ease;
+    }
+    li:hover::after {
+      width: 100%;
+    }
+    .author {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="home">
+
+  <div class="background-cube"></div>
+
+  <header>
+    <h1>Bookshelf</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="Quite shelf.html">Links</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>A curated list of books I’ve read, am currently reading, and plan to read.</p>
+
+    <h2>Read</h2>
+    <ul>
+      <li style="--i:1">Dune <span class="author">– Frank Herbert</span></li>
+      <li style="--i:2">Verity <span class="author">– Colleen Hoover</span></li>
+      <li style="--i:3">Normal People <span class="author">– Sally Rooney</span></li>
+      <li style="--i:4">Harry Potter <span class="author">– J.K. Rowling</span></li>
+      <li style="--i:5">Dark Matter <span class="author">– Blake Crouch</span></li>
+      <li style="--i:6">The Witcher: Entire series <span class="author">– Andrzej Sapkowski</span></li>
+      <li style="--i:7">2001: A Space Odyssey <span class="author">– Arthur C. Clarke</span></li>      
+    </ul>
+
+    <h2>Currently Reading</h2>
+    <ul>
+      <li style="--i:1">Godel, Escher, Bach <span class="author">– Douglas Hofstadter</span></li>
+    </ul>
+
+    <h2>Will Read</h2>
+    <ul>
+       <li style="--i:1"> <span class="author">– </span></li>
+    </ul>
+  </main>
+
+</body>
+</html>
