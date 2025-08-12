@@ -7,6 +7,7 @@
     <title>Bookshelf</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bookshelf.css">
       <style>
         body {
         background-color: #0c0c0c;
@@ -59,7 +60,6 @@
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           gap: 2rem;
-          max-width: 1000px;
         }
 
         .shelf-section {
@@ -116,17 +116,14 @@
       </style>
   </head>
   <body>
-    <header style="text-align:center; padding:2rem 1rem; border-bottom:1px solid rgba(255,255,255,0.05);">
-    <h1 style="margin-bottom:0.5rem;">Bookshelf</h1>
-    <p style="font-size:1.1rem; color:#bcb6b0; margin-top:0.3rem;">
-      I read for the worlds, the words, and the wonder. This is my curated shelf.
-    </p>
+    <header>
+      <h1>Bookshelf</h1>
+      <p class="blurb">
+        I read for the worlds, the words, and the wonder. This is my curated shelf.
+      </p>
     </header>
-   <main>
-    <p style="font-style:italic; color:#9a948f; margin-top:0.5rem; font-size:0.95rem;">
-    “A reader lives a thousand lives before he dies.” — George R.R. Martin
-    </p>
-   </main>
+    <main>
+      <p class="quote">“A reader lives a thousand lives before he dies.” — George R.R. Martin</p>
       <div class="bookshelf-grid">
         <div class="shelf-section">
           <h2>Read</h2>
