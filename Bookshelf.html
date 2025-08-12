@@ -1,184 +1,178 @@
 <!--All that I've read but...-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bookshelf</title>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #0c0c0c;
-      color: #e5e0dc;
-      font-family: 'EB Garamond', serif;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
+      <style>
+        body {
+        background-color: #0c0c0c;
+        color: #e5e0dc;
+        font-family: 'EB Garamond', serif;
+        margin: 0;
+        padding: 0;
+        }
 
-    header {
-      padding: 2rem;
-      text-align: center;
-      background: linear-gradient(180deg, #000000ff, #0f0f0f);
-      box-shadow: 0 2px 14px rgba(0,0,0,0.7);
-    }
+        header {
+          padding: 2rem;
+          text-align: center;
+          background: linear-gradient(180deg, #000000ff, #0f0f0f);
+          box-shadow: 0 2px 14px rgba(0,0,0,0.7);
+        }
 
-    header h1 {
-      font-size: 2.4rem;
-      font-family: 'EB Garamond', serif;
-      margin: 0 0 0.3rem 0;
-    }
+        header h1 {
+          font-size: 2.4rem;
+          font-family: 'EB Garamond', serif;
+          padding: 2rem 1rem;
+          margin: 0 0 0.3rem 0;
+        }
 
-    header nav a {
-      color: #bcb6b0;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-family: 'DM Sans', sans-serif;
-    }
+        header nav a {
+          color: #bcb6b0;
+          margin: 0 1rem;
+          text-decoration: none;
+          font-family: 'EB Garamond', serif;
+        }
 
-    header nav a:hover {
-      color: #fff;
-    }
+        header nav a:hover {
+          color: #fff;
+        }
 
-    main {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
+        main {
+          max-width: 1100px;
+          margin: 0 auto;
+          padding: 2rem;
+        }
 
-    p {
-      color: #bcb6b0;
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-    }
+        p {
+          color: #bcb6b0;
+          text-align: center;
+          max-width: 700px;
+          margin: 0 auto 2rem;
+        }
 
-    .bookshelf-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
+        .bookshelf-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2rem;
+        }
 
-    .shelf-section {
-      background: linear-gradient(180deg, #0c0c0c, #0f0f0f);
-      border-radius: 14px;
-      padding: 1.5rem;
-      box-shadow: 0 2px 14px rgba(0,0,0,0.7);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
+        .shelf-section {
+          background: linear-gradient(180deg, #0c0c0c, #0f0f0f);
+          border-radius: 14px;
+          padding: 1.5rem;
+          box-shadow: 0 2px 14px rgba(0,0,0,0.7);
+          border: 1px solid rgba(255, 255, 255, 0.08);
+        }
 
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding-bottom: 0.3rem;
-    }
+        h2 {
+          font-size: 1.8rem;
+          margin-bottom: 1rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+          padding-bottom: 0.3rem;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
 
-    li {
-      margin: 0.6rem 0;
-      padding: 0.4rem 0;
-      transition: color 0.3s ease;
-      cursor: default;
-    }
+        li {
+          margin: 0.6rem 0;
+          padding: 0.4rem 0;
+          transition: color 0.3s ease;
+          cursor: default;
+        }
 
-    li:hover {
-      color: #fff;
-    }
+        li:hover {
+          color: #fff;
+        }
 
-    .author {
-      color: rgba(255, 255, 255, 0.5);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.9rem;
-    }
+        .author {
+          color: rgba(255, 255, 255, 0.5);
+          font-family: 'DM Sans', sans-serif;
+          font-size: 0.9rem;
+        }
 
-    /* Mobile tweaks */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      header nav a {
-        display: inline-block;
-        margin: 0.4rem 0.6rem;
-      }
-      .bookshelf-grid {
-        gap: 1.2rem;
-      }
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <h1>Bookshelf</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="Quite shelf.html">Links</a>
-  </nav>
-</header>
-
-<main>
-  <p>A list of books that I’ve read, am currently reading, and plan to read.</p>
-
-  <div class="bookshelf-grid">
-
-    <div class="shelf-section">
-      <h2>Read</h2>
-      <ul>
-        <li>Dune and Dune: Messiah <span class="author">– Frank Herbert</span></li>
-        <li>Perks of Being a Wallflower <span class="author">– Stephen Chbosky</span></li>
-        <li>The Witcher Series <span class="author">– Andrzej Sapkowski</span></li>
-        <li>2001: A Space Odyssey <span class="author">– Arthur C. Clarke</span></li>
-        <li>The Spy Who Came in from the Cold <span class="author">– John le Carré</span></li>
-        <li>Argylle <span class="author">– Ellie Conway</span></li>
-        <li>Project Hail Mary <span class="author">– Andy Weir</span></li>
-        <li>Thirteen Reasons Why <span class="author">– Jay Asher</span></li>
-        <li>Verity <span class="author">– Colleen Hoover</span></li>
-        <li>Normal People <span class="author">– Sally Rooney</span></li>
-        <li>Conversations with Friends <span class="author">– Sally Rooney</span></li>
-        <li>Harry Potter Series <span class="author">– J.K. Rowling</span></li>
-        <li>The Road <span class="author">– Cormac McCarthy</span></li>
-        <li>Thinking, Fast and Slow <span class="author">– Daniel Kahneman</span></li>
-
-      </ul>
-    </div>
-
-    <div class="shelf-section">
-      <h2>Currently Reading</h2>
-      <ul>
-        <li>Godel, Escher, Bach <span class="author">– Douglas Hofstadter</span></li>
-        <li>A Game of Thrones <span class="author">– George R.R. Martin</span></li>
-      </ul>
-    </div>
-
-    <div class="shelf-section">
-      <h2>Will Read</h2>
-      <ul>
-        <li>Foundation Series <span class="author">– Isaac Asimov</span></li>
-        <li>Neuromancer <span class="author">– William Gibson</span></li>
-        <li>Brave New World <span class="author">– Aldous Huxley</span></li>
-        <li>The Hitchhiker's Guide to the Galaxy <span class="author">– Douglas Adams</span></li>
-        <li>Snow Crash <span class="author">– Neal Stephenson</span></li>
-        <li>The Dispossessed <span class="author">– Ursula K. Le Guin</span></li>
-        <li>American Gods <span class="author">– Neil Gaiman</span></li>
-      </ul>
-    </div>
-
-  </div>
-</main>
-</body>
-<footer>
-  <nav>
-    <p style="text-align:center; margin-top:2em;">
-      <a href="Quiet shelf.html"  style="color:#c66; text-decoration:none; font-style:italic; font-size:1em; opacity:0.8;">
-    ← back to where you were</a>
-    </p>
-    </nav>
-</footer>
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+          header h1 {
+            font-size: 1.8rem;
+          }
+          header nav a {
+            display: inline-block;
+            margin: 0.4rem 0.6rem;
+          }
+          .bookshelf-grid {
+            gap: 1.2rem;
+          }
+        }
+       </style>
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="Quite shelf.html">Links</a>
+      </nav>
+    </header>
+    <main>
+      <p>A list of books that I’ve read, am currently reading, and plan to read.</p>
+      <div class="bookshelf-grid">
+        <div class="shelf-section">
+          <h2>Read</h2>
+          <ul>
+            <li>Dune and Dune: Messiah <span class="author">– Frank Herbert</span></li>
+            <li>Perks of Being a Wallflower <span class="author">– Stephen Chbosky</span></li>
+            <li>The Witcher Series <span class="author">– Andrzej Sapkowski</span></li>
+            <li>2001: A Space Odyssey <span class="author">– Arthur C. Clarke</span></li>
+            <li>The Spy Who Came in from the Cold <span class="author">– John le Carré</span></li>
+            <li>Argylle <span class="author">– Ellie Conway</span></li>
+            <li>Project Hail Mary <span class="author">– Andy Weir</span></li>
+            <li>Thirteen Reasons Why <span class="author">– Jay Asher</span></li>
+            <li>Verity <span class="author">– Colleen Hoover</span></li>
+            <li>Normal People <span class="author">– Sally Rooney</span></li>
+            <li>Conversations with Friends <span class="author">– Sally Rooney</span></li>
+            <li>Harry Potter Series <span class="author">– J.K. Rowling</span></li>
+            <li>The Road <span class="author">– Cormac McCarthy</span></li>
+            <li>Thinking, Fast and Slow <span class="author">– Daniel Kahneman</span></li>
+          </ul>
+        </div>
+        <div class="shelf-section">
+          <h2>Currently Reading</h2>
+          <ul>
+            <li>Godel, Escher, Bach <span class="author">– Douglas Hofstadter</span></li>
+            <li>A Game of Thrones <span class="author">– George R.R. Martin</span></li>
+          </ul>
+        </div>
+        <div class="shelf-section">
+          <h2>Will Read</h2>
+          <ul>
+            <li>Foundation Series <span class="author">– Isaac Asimov</span></li>
+            <li>Neuromancer <span class="author">– William Gibson</span></li>
+            <li>Brave New World <span class="author">– Aldous Huxley</span></li>
+            <li>The Hitchhiker's Guide to the Galaxy <span class="author">– Douglas Adams</span></li>
+            <li>Snow Crash <span class="author">– Neal Stephenson</span></li>
+            <li>The Dispossessed <span class="author">– Ursula K. Le Guin</span></li>
+            <li>American Gods <span class="author">– Neil Gaiman</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+      <nav>
+        <p style="text-align:center; margin-top:2em;">
+          <a href="Quiet shelf.html"  style="color:#c66; text-decoration:none; font-style:italic; font-size:1em; opacity:0.8;">
+        ← back to where you were</a>
+        </p>
+      </nav>
+  </footer>
 </html>
