@@ -16,7 +16,6 @@ header {
   margin-top: 0.75rem;
   font-size: 0.95rem;
 }
-/* Home cube link positioning */
 .home-cube-link {
   position: fixed;
   top: 1rem;
@@ -24,7 +23,6 @@ header {
   z-index: 1000;
 }
 
-/* Base cube style */
 #home-cube {
   width: 80px;
   height: 80px;
@@ -32,7 +30,6 @@ header {
   transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover/tap feedback */
 #home-cube:hover,
 #home-cube:active {
   transform: rotate(10deg) scale(1.05);
@@ -40,7 +37,6 @@ header {
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
 }
 
-/* Slight rotation on page load */
 @keyframes cube-intro {
   0%   { transform: rotate(-8deg) scale(0.98); opacity: 0; }
   60%  { transform: rotate(6deg) scale(1.02); opacity: 1; }
@@ -49,12 +45,4 @@ header {
 
 #home-cube.loaded {
   animation: cube-intro 1.4s ease-out;
-}
-
-/* Responsive tweaks for smaller screens */
-@media (max-width: 600px) {
-  #home-cube {
-    width: 100px;
-    height: 100px;
-  }
 }
