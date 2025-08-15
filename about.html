@@ -11,6 +11,11 @@
   <body class="home">
     <div class="background-cube"></div>
     <div class="content">
+        <!-- Cube home button -->
+    <a href="/" style="position: fixed; top: 1rem; left: 1rem; z-index: 1000;">
+      <img src="/assets/cube.png" 
+           style="width: 100px; height: 100px; opacity: 0.8; transition: transform 0.2s, opacity 0.2s;">
+    </a>  
     </div>
     <header>
       <h1>About</h1>
@@ -28,9 +33,16 @@
         </section>
       </main>
   </body>
-    <footer>
-        <a href="index.html" style="text-align:center; color: #b74a46; font-style:italic; text-decoration: none;">
-      Home →
-    </a>
-  </footer>
+
+    <script>
+      const cubeImg = document.querySelector('a[href="/"] img');
+      cubeImg.addEventListener('mouseover', function() {
+        this.style.transform = 'rotate(10deg)';
+        this.style.opacity = '1';
+      });
+      cubeImg.addEventListener('mouseout', function() {
+        this.style.transform = 'rotate(0deg)';
+        this.style.opacity = '0.8';
+      });
+    </script>
 </html>
