@@ -10,6 +10,23 @@
     <title>Now - Bala Murali</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <a href="/" style="position: fixed; top: 1rem; left: 1rem; z-index: 1000;">
+    <img src="/assets/cube.png" alt="Home" 
+         style="width: 40px; height: 40px; opacity: 0.8; transition: transform 0.2s, opacity 0.2s;">
+</a>
+
+<script>
+    // Hover effect
+    document.querySelector('a[href="/"] img').addEventListener('mouseover', function() {
+        this.style.transform = 'rotate(10deg)';
+        this.style.opacity = '1';
+    });
+    document.querySelector('a[href="/"] img').addEventListener('mouseout', function() {
+        this.style.transform = 'rotate(0deg)';
+        this.style.opacity = '0.8';
+    });
+</script>
+
   <body class="home">
     <div class="background-cube"></div>
     <div class="content">
