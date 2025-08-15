@@ -1,152 +1,152 @@
 
-body {
-  background-color: #000000ff;/* Dark background */
-  color: #fcf9f6;
-  font-family: 'EB Garamond', serif;
-  font-size: 18px;
-  line-height: 1.8;/* paragraph spacing  */
-  max-width: 700px;/* Keeps content centered and readable */
-  margin: auto;/* Horizontally center the content */
-  padding: 2rem;
-}
-small, footer, .audio-caption {
-  font-family: 'DM Sans', sans-serif;
-}
-/* === Background Decoration(Whatever, subject to change) === */
-.home .background-cube {
-  background-image: url('/assets/cube.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 700px;
-  opacity: 0.1;
-  position: fixed;/* So it doesn’t scroll with the page */
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 0;/* Places it behind all other content */
-  pointer-events: none;/* So it doesn't block clicks or interact */
-}
+  body {
+    background-color: #000000ff;/* Dark background */
+    color: #fcf9f6;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    line-height: 1.8;/* paragraph spacing  */
+    max-width: 700px;/* Keeps content centered and readable */
+    margin: auto;/* Horizontally center the content */
+    padding: 2rem;
+  }
+  small, footer, .audio-caption {
+    font-family: 'DM Sans', sans-serif;
+  }
+  /* === Background Decoration(Whatever, subject to change) === */
+  .home .background-cube {
+    background-image: url('/assets/cube.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px;
+    opacity: 0.1;
+    position: fixed;/* So it doesn’t scroll with the page */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;/* Places it behind all other content */
+    pointer-events: none;/* So it doesn't block clicks or interact */
+  }
 
-/* Content sits above the background cube */
-.home .content {
-  position: relative;
-  z-index: 2;
-}
+  /* Content sits above the background cube */
+  .home .content {
+    position: relative;
+    z-index: 2;
+  }
 
 
-header {
-  background-color: #000000ff; /* Solid black background */
-  text-align: center;
-  padding: 2rem 1rem;
-  border-bottom: 1px solid #0e0909;
-}
+  header {
+    background-color: #000000ff; /* Solid black background */
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid #0e0909;
+  }
 
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: 0.05rem;
-   text-shadow: 1px 1px 2px #000;
-}
+  header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.05rem;
+    text-shadow: 1px 1px 2px #000;
+  }
 
-header p {
-  font-size: 1rem;
-  color: #f6f4f2;
-  margin-top: 0.5rem;
-}
+  header p {
+    font-size: 1rem;
+    color: #f6f4f2;
+    margin-top: 0.5rem;
+  }
 
-nav {
-  margin-top: 1rem;
-}
+  nav {
+    margin-top: 1rem;
+  }
 
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #eae0d5;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-a {
-  color: #ff6b6b;
-  text-decoration: none;
-}
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #eae0d5;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  a {
+    color: #ff6b6b;
+    text-decoration: none;
+  }
 
-a:hover {
-    color: #ff8787;
-  text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
-  text-decoration: underline;
-  transform: translateY(-1px);/* lift effect */
-  transition: all 0.2s ease;
-}
+  a:hover {
+      color: #ff8787;
+    text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
+    text-decoration: underline;
+    transform: translateY(-1px);/* lift effect */
+    transition: all 0.2s ease;
+  }
 
-.nav-pill {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  margin: 0.2rem;   /* Margin for spacing between pills */
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  font-style: italic;
-  color: #ff6b6b;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
+  .nav-pill {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    margin: 0.2rem;   /* Margin for spacing between pills */
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    font-style: italic;
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
 
-.nav-pill:hover {
-  background-color: #2a2a2a;
-  color: #ffa3a3;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3);
-}  
+  .nav-pill:hover {
+    background-color: #2a2a2a;
+    color: #ffa3a3;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3);
+  }  
 
-main {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
 
-section h2 {
-  font-size: 1.5rem;
-  border-bottom: 1px solid #333;
-  color: #f4f1ee;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
+  section h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    color: #f4f1ee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
 
-.audio-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000ff; /* Dark background for audio player */
-  color: #f3ebe2;/* added recently*/
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 12px 20px;
-  max-width: 400px;
-  margin: 20px auto; /* centers it */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  .audio-player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000ff; /* Dark background for audio player */
+    color: #f3ebe2;/* added recently*/
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 12px 20px;
+    max-width: 400px;
+    margin: 20px auto; /* centers it */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-.audio-caption {
-  text-align: center;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #aaa;
-  padding: 8px;
-}
-footer {
-  background-color: #000000ff;
-  border-top: 1px solid #333;
-  color: #a8a6a1;
-}
-footer a {
-  color: #ff6b6b;
-  font-family: 'EB Garamond', serif;
-}
+  .audio-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #aaa;
+    padding: 8px;
+  }
+  footer {
+    background-color: #000000ff;
+    border-top: 1px solid #333;
+    color: #a8a6a1;
+  }
+  footer a {
+    color: #ff6b6b;
+    font-family: 'EB Garamond', serif;
+  }
 
-footer a:hover {
-  text-decoration: underline;
-}
+  footer a:hover {
+    text-decoration: underline;
+  }
