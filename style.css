@@ -150,6 +150,25 @@
   footer a:hover {
     text-decoration: underline;
   }
+
+.blurb {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.quote {
+  font-style: italic;
+  color: var(--text-faint);
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+.home-cube-link {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+}
 /* Cube container fixed at top-left */
 .home-cube-link {
   position: fixed;
