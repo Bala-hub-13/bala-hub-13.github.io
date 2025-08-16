@@ -14,7 +14,7 @@ header {
   font-style: italic;
   color: var(--text-faint);
   margin-top: 0.75rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 .home-cube-link {
   position: fixed;
