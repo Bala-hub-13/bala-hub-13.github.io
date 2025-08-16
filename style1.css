@@ -181,40 +181,27 @@ footer a:hover {
   border: 1px solid #222;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
-/* Home cube link positioning */
-.home-cube-link {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-}
-
-/* Base cube style */
+/* Default cube look */
 #home-cube {
   width: 80px;
   height: 80px;
-  opacity: 0.8;
-  transition: transform 0.3s ease, opacity 0.3s ease, filter 0.3s ease;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  filter: none;
+  box-shadow: none
 }
 
-/* Hover/tap feedback */
-#home-cube:hover,
-#home-cube:active {
+/* Hover only moves the cube */
+#home-cube:hover {
   transform: rotate(10deg) scale(1.05);
-  opacity: 1;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.3));
 }
 
-/* Slight rotation on page load */
-@keyframes cube-intro {
-  0%   { transform: rotate(-8deg) scale(0.98); opacity: 0; }
-  60%  { transform: rotate(6deg) scale(1.02); opacity: 1; }
-  100% { transform: rotate(0deg) scale(1); }
+/* Hidden state for scroll down */
+#home-cube.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
-#home-cube.loaded {
-  animation: cube-intro 1.4s ease-out;
-}
 
 /* Responsive tweaks for smaller screens */
 @media (max-width: 600px) {
