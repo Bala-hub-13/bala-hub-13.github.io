@@ -1,18 +1,13 @@
 const cube = document.getElementById('home-cube');
-let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-
-  if (currentScroll > lastScroll) {
-    // scrolling down → hide (more like fade) cube
+  if (window.scrollY > 0) {
+    // user has scrolled down → hide cube
     cube.classList.add('hidden');
   } else {
-    // scrolling up → show cube
+    // back to very top → show cube
     cube.classList.remove('hidden');
   }
-
-  lastScroll = currentScroll <= 0 ? 0 : currentScroll; // avoid negatives
 });
 
 document.addEventListener("DOMContentLoaded", function () {
