@@ -1,3 +1,4 @@
+<!--Between what is and what will be.-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,24 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Now - Bala Murali</title>
     <link rel="stylesheet" href="style.css">
-    <script src="cube.js" defer></script>
-  </head>
-  
+  </head>  
   <body class="home">
-    <!-- Cube home button -->
-    <a href="/" class="home-cube-link">
-     <img id="home-cube" src="/assets/cube.png" alt="Home">
-    </a>  
-
     <div class="background-cube"></div>
-
-    <header>
-      <h1>Now</h1>
-      <p style="font-style: italic; color: #aaa; margin-top: 0.5rem;">
-        "Between what is and what will be."
-      </p>
-    </header>
-
+      <header>
+        <h1 style="color: #c65757;">Now</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="musings.html">Musings</a>
+          <a href="Bookshelf.html">Bookshelf</a>
+        </nav>
+      </header>  
     <main>
       <section>
         <h2>What am I doing now?</h2>
@@ -32,25 +27,9 @@
       <section>
         <p>I'm currently learning about gene retention in mitochondria and considering a PhD in the field. But for now I've taken a year off to learn and work on what I <em>really</em> want.</p>
         <p>I'm also working on a few projects, including this website, and a research project on mitochondrial genetics.</p>
-        <p>In my free time, I enjoy reading, <a href="https://letterboxd.com/Bala_13/" target="_blank">movies</a> and playing guitar (miserably).
+        <p>In my free time, I enjoy <a href="Bookshelf.html">reading</a>, <a href="https://letterboxd.com/Bala_13/" target="_blank">movies</a> and playing guitar (miserably).</p>
         <p style="font-size: 0.9rem; color: #888; margin-top: 2rem;">Last updated: August 2025</p>
       </section>
     </main>
-
-    <script>
-      const cubeImg = document.querySelector('a[href="/"] img');
-      cubeImg.addEventListener('mouseover', function() {
-        this.style.transform = 'rotate(10deg)';
-        this.style.opacity = '1';
-      });
-      cubeImg.addEventListener('mouseout', function() {
-        this.style.transform = 'rotate(0deg)';
-        this.style.opacity = '0.8';
-      });
-              document.addEventListener("DOMContentLoaded", function() {
-    const cube = document.getElementById('home-cube');
-    requestAnimationFrame(() => cube.classList.add('loaded'));
-  });
-    </script>
   </body>
 </html>
