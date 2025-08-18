@@ -16,39 +16,5 @@ header {
   margin-top: 0.75rem;
   font-size: 1rem;
 }
-.home-cube-link {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-}
-
-/* Default cube look */
-#home-cube {
-  width: 80px;
-  height: 80px;
-  opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.5s ease;
-  filter: none;
-  box-shadow: none
-}
-
-/* Hover only moves the cube */
-#home-cube:hover {
-  transform: rotate(10deg) scale(1.05);
-}
-
-/* Hidden state for scroll down */
-#home-cube.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
 
 
-/* Responsive tweaks for smaller screens */
-@media (max-width: 600px) {
-  #home-cube {
-    width: 80px;
-    height: 80px;
-  }
-}
