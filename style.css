@@ -150,59 +150,31 @@
   footer a:hover {
     text-decoration: underline;
   }
+@media (max-width: 600px) {/* Responsive styles for smaller screens */
+  body {
+    font-size: 16px;
+    padding: 1.5rem;
+  }
 
-.blurb {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
-}
+  header h2 {
+    font-size: 1.6rem;
+  }
 
-.quote {
-  font-style: italic;
-  color: var(--text-faint);
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-}
-.home-cube-link {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-}
-/* Cube container fixed at top-left */
-.home-cube-link {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1000;
-}
+  .nav-pill {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.95rem;
+  }
 
-/* Default cube look */
-#home-cube {
-  width: 80px;
-  height: 80px;
-  opacity: 0.9;
-  transition: transform 0.3s ease, opacity 0.5s ease;
-  filter: none;
-  box-shadow: none
-}
+  main {
+    padding: 0 0.5rem;
+  }
 
-/* Hover only moves the cube */
-#home-cube:hover {
-  transform: rotate(10deg) scale(1.05);
-}
-
-/* Hidden state for scroll down */
-#home-cube.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-
-/* Responsive tweaks for smaller screens */
-@media (max-width: 600px) {
-  #home-cube {
-    width: 100px;
-    height: 100px;
+  .background-cube {
+    background-size: 400px;
   }
 }
+
+
+
+
+
