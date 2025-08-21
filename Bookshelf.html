@@ -7,162 +7,20 @@
     <title>Bookshelf</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=DM+Sans&display=swap" rel="stylesheet">
-      <style>
-        body {
-        background-color: #000000ff;
-        color: #e5e0dc;
-        font-family: 'EB Garamond', serif;
-        font-size: 18px;
-        margin: 0;
-        padding: 0;
-        }
-
-        header {
-          padding: 2rem;
-          text-align: center;
-          background: linear-gradient(180deg, #000000ff, #0f0f0f);
-          box-shadow: 0 2px 14px rgba(0,0,0,0.7);
-        }
-
-        header h1 {
-          font-size: 2.2rem;
-          font-family: 'EB Garamond', serif;
-          padding: 2rem 1rem;
-          margin: 0 0 0.3rem 0;
-        }
-
-        header nav a {
-          color: #bcb6b0;
-          margin: 0 1rem;
-          text-decoration: none;
-          font-family: 'EB Garamond', serif;
-          font-size: 1.1rem;
-        }
-
-        header nav a:hover {
-          color: #fff;
-        }
-
-        main {
-          max-width: 1100px;
-          margin: 0 auto;
-          padding: 2rem;
-        }
-
-        p {
-          color: #bcb6b0;
-          text-align: center;
-          max-width: 700px;
-          margin: 0 auto 2rem;
-        }
-
-        .bookshelf-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 2rem;
-        }
-
-        .shelf-section {
-          background: linear-gradient(180deg, #0c0c0c, #0f0f0f);
-          border-radius: 14px;
-          padding: 1.5rem;
-          box-shadow: 0 2px 14px rgba(0,0,0,0.7);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-        }
-
-        h2 {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-          padding-bottom: 0.3rem;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        li {
-          margin: 0.6rem 0;
-          padding: 0.4rem 0;
-          position: relative;
-          cursor: default;
-          transition: color 0.3s ease;
-        }
-
-        li::after {
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 0%;
-          height: 1px;
-          background: rgba(255, 107, 107, 0.7);
-          transition: width 0.4s ease;
-          box-shadow: 0 0 6px rgba(255, 107, 107, 0.4);
-        }
-
-        li:hover::after {
-          width: 100%;
-        }
-
-        li:hover {
-          text-shadow: 0 0 6px rgba(255, 107, 107, 0.6);
-        }
-
-
-        .author {
-          color: rgba(255, 255, 255, 0.5);
-          font-family: 'DM Sans', sans-serif;
-          font-size: 0.9rem;
-        }
-        header {
-          text-align: center;
-          padding: 2rem 1rem;
-          border-bottom: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .blurb {
-          font-size: 1.1rem;
-          color: var(--text-muted);
-          margin-top: 0.5rem;
-        }
-
-        .quote {
-          font-style: italic;
-          color: var(--text-faint);
-          margin-top: 0.75rem;
-          font-size: 1rem;
-        }
-
-        
-        @media (max-width: 600px) {
-          header h1 {
-            font-size: 1.8rem;
-          }
-          header nav a {
-            display: inline-block;
-            margin: 0.4rem 0.6rem;
-          }
-          .bookshelf-grid {
-            gap: 1.2rem;
-          }
-        }
-      </style>
+    <link rel="stylesheet" href="bkshlf.css">
   </head>
   <body>
     <header>
       <h1>Bookshelf</h1>
       <p class="blurb">
-        I read for the worlds, the words, and the wonder.<!--This sounds good! ticked alliteration without losing the gist!-->
+        For the words, the worlds, and the wonder.<!--WOW! ticked alliteration without losing the gist!-->
       </p>
     </header>
     <main>
       <p class="quote">“A reader lives a thousand lives before he dies.” — George R.R. Martin</p>
       <div class="bookshelf-grid">
         <div class="shelf-section">
-          <h2>Read</h2>
+          <h2>Read</h2> <!--In no particular order-->
           <ul>
             <li>1. Dune and Dune: Messiah <span class="author">– Frank Herbert</span></li>
             <li>2. Harry Potter Series <span class="author">– J.K. Rowling</span></li>
@@ -185,7 +43,7 @@
             <li>19. The Road <span class="author">– Cormac McCarthy</span></li>
             <li>20. Looking for Alaska <span class="author">– John Green</span></li>
             <li>21. Argylle <span class="author">– Ellie Conway</span></li>
-            <li>22. The Facebook Effect <span class="author">– David Kirkpatrick</span></li><!-- Yes, I really read The Facebook Effect. Don’t ask why.-->
+            <li>22. The Facebook Effect <span class="author">– David Kirkpatrick</span></li><!-- Yes, I read it. Don’t ask why.-->
             <li>23. Call Me by Your Name <span class="author">– André Aciman</span></li>
             <li>24. Project Hail Mary <span class="author">– Andy Weir</span></li>
             <li>25. Thirteen Reasons Why <span class="author">– Jay Asher</span></li>
@@ -211,12 +69,12 @@
           </ul>
         </div>
         <div class="shelf-section">
-          <h2>Will Read</h2>
+          <h2>Will Read</h2> <!-- Malazan would be the crown jewel -->
           <ul>
             <li>1. A Clash of Kings <span class="author">– George R.R. Martin</span></li>
             <li>2. Lolita <span class="author">– Vladimir Nabokov</span></li>
             <li>3. Left hand of the darkness <span class="author">– Ursula K. Le Guin</span></li>
-            <li>4. Best Served Cold <span class="author">– Joe Abercrombie</span></li>
+            <li>4. Best Served Cold <span class="author">– Joe Abercrombie</span></li> <!-- Also his First Law trilogy -->
 
           </ul>
         </div>
