@@ -181,3 +181,16 @@ footer a:hover {
   border: 1px solid #222;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
+.social-icons {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 30px; 
+  height: 30px;
+  filter: grayscale(100%); 
+}
