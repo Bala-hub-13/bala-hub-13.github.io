@@ -44,3 +44,27 @@ a:hover {
   transform: translateY(-1px);/* Slight lift effect */
   transition: all 0.2s ease;
 }
+.entry-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.entry-image img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.entry-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.4);
+}
+
+.entry-image figcaption {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
