@@ -34,7 +34,11 @@ a {
   text-decoration: none;
 }
 h3 {
-  color: #ff6b6b;
+  color: #c66;
+  font-family: 'EB Garamond', serif;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2em;
+  margin-top: 2em;
 }
 
 a:hover {
