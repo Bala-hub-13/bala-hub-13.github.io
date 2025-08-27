@@ -40,7 +40,12 @@ h3 {
   padding-bottom: 0.2em;
   margin-top: 2em;  
 }
-
+  .audio-caption {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #aaa;
+    padding: 8px;
+  }
 a:hover {
     color: #ff8787;
   text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
