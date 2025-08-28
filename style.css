@@ -173,6 +173,14 @@
     background-size: 400px;
   }
 }
+.date {
+  font-size: 0.9rem;
+  font-style:italic;
+  float : right;
+  color: #aaa;
+  margin-right: 8px;
+}
+
 
 
 
