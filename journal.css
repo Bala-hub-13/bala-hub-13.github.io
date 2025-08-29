@@ -1,5 +1,5 @@
 body {
-  background-color: #000000ff;/* Dark background */
+  background-color: #000000ff;
   color: #f9f6f4;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
@@ -14,10 +14,34 @@ small, footer, .audio-caption {
 }
 
 header {
-  background-color: #000000ff; /* Dark header */
+  background-color: #000000ff; 
   padding: 2rem 1rem;
   border-bottom: 1px solid #0e0909;
 }
+.breadcrumb {
+    position: absolute; 
+    left: 20px;
+    top: 10px; 
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: white;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.breadcrumb span {
+    color: gray; 
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
 nav {
   margin-top: 1rem;
 }
