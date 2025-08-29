@@ -75,6 +75,11 @@ h3 {
     gap: 10px;
     text-align: center;
   }
+@media (max-width: 768px) {
+  .audio-container {
+    flex-direction: column; 
+  }
+}
 a:hover {
     color: #ff8787;
   text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
