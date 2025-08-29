@@ -14,11 +14,11 @@ small, footer, .audio-caption {
 }
 /* === Background Decoration(Whatever, subject to change) === */
 .home .background-cube {
-  background-image: url('/assets/cube.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
+  background-image: url('https://bala-hub-13.github.io/assets/Cube_1.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 700px;
-  opacity: 0.1;
+  opacity: 0.15;
   position: fixed;
   top: 0;
   left: 0;
