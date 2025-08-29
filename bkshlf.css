@@ -38,7 +38,41 @@
           margin: 0 auto;
           padding: 2rem;
         }
+        .breadcrumb {
+            position: absolute; 
+            left: 20px;
+            top: 10px; 
+            font-family: 'EB Garamond', serif;
+            font-size: 18px;
+            color: white;
+        }
 
+        .breadcrumb a {
+            text-decoration: none;
+            color: white;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .breadcrumb span {
+            color: gray; 
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+          a {
+            color: #ff6b6b;
+            text-decoration: none;
+          }
+
+          a:hover {
+              color: #ff8787;
+            text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
+            text-decoration: underline;
+            transform: translateY(-2px);
+            transition: all 0.2s ease;
+          }
         p {
           color: #bcb6b0;
           text-align: center;
