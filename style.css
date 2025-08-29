@@ -54,6 +54,29 @@
     color: #f6f3f0;
     margin-top: 0.5rem;
   }
+  .breadcrumb {
+      position: absolute; 
+      left: 20px;
+      top: 20px; 
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      color: white;
+  }
+
+  .breadcrumb a {
+      text-decoration: none;
+      font-style: italic;
+      color: white;
+      font-weight: 500;
+  }
+
+  .breadcrumb span {
+      color: gray; 
+  }
+
+  .breadcrumb a:hover {
+      text-decoration: underline;
+  }
 
   nav {
     margin-top: 1rem;

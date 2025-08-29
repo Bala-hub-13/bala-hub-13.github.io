@@ -18,6 +18,29 @@ header {
   padding: 2rem 1rem;
   border-bottom: 1px solid #0e0909;
 }
+  .breadcrumb {
+      position: absolute; 
+      left: 20px;
+      top: 20px; 
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      color: white;
+  }
+
+  .breadcrumb a {
+      text-decoration: none;
+      font-style: italic;
+      color: white;
+      font-weight: 500;
+  }
+
+  .breadcrumb span {
+      color: gray; 
+  }
+
+  .breadcrumb a:hover {
+      text-decoration: underline;
+  }
 nav {
   margin-top: 1rem;
 }
