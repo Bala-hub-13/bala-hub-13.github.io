@@ -39,7 +39,8 @@ header {
   }
 
   .breadcrumb a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: #ff6b6b;
   }
 nav {
   margin-top: 1rem;

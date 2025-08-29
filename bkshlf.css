@@ -53,7 +53,8 @@
   }
 
   .breadcrumb a:hover {
-      text-decoration: underline;
+      text-decoration: none;
+      color: #ff6b6b;
   }
         main {
           max-width: 1100px;
