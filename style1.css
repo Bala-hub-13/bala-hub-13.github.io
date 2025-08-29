@@ -3,10 +3,10 @@ body {
   background-color: #000000ff;/* Dark background */
   color: #f9f6f4;
   font-family: 'EB Garamond', serif;
-  font-size: 18px;
-  line-height: 1.8;/* paragraph spacing  */
-  max-width: 800px;/* Keeps content centered and readable */
-  margin: auto;/* Horizontally center the content */
+  font-size: 19px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: auto;
   padding: 2rem;
 }
 small, footer, .audio-caption {
@@ -19,16 +19,16 @@ small, footer, .audio-caption {
   background-position: center;
   background-size: 700px;
   opacity: 0.1;
-  position: fixed;/* So it doesn’t scroll with the page */
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 0;/* Places it *behind* all other content */
-  pointer-events: none;/* So it doesn't block clicks or interact */
+  z-index: 0;
+  pointer-events: none;
 }
 
-/* Content sits *above* the background cube */
+
 .home .content {
   position: relative;
   z-index: 2;
@@ -36,7 +36,7 @@ small, footer, .audio-caption {
 
 
 header {
-  background-color: #000000ff; /* Dark header */
+  background-color: #000000ff; 
   text-align: center;
   padding: 2rem 1rem;
   border-bottom: 1px solid #0e0909;
@@ -74,15 +74,15 @@ a {
 a:hover {
     color: #ff8787;
   text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
-  text-decoration: none; /* Underline removed */
-  transform: translateY(-1px);/* Slight lift effect */
+  text-decoration: none; 
+  transform: translateY(-1px);
   transition: all 0.2s ease;
 }
 
 .nav-pill {
   display: inline-block;
-  padding: 0.2rem 0.6rem; /* Padding for the pill shape */
-  margin: 0.2rem;   /* Margin for spacing between pills */
+  padding: 0.2rem 0.6rem; 
+  margin: 0.2rem;   
   background-color: #1a1a1a;
   border-radius: 8px;
   font-style: italic;
@@ -107,29 +107,13 @@ main {
 
 section h2 {
   font-size: 1.5rem;
-  background-color:#000000ff; /* Dark background for section headers */;
+  background-color:#000000ff; 
   border-bottom: 1px solid #4a3f3f;
   color: #f4f1ee;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
 
-.audio-player {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000ff; /* Dark background for audio player */
-  color: #f3ebe2;/* added recently*/
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 12px 20px;
-  max-width: 400px;
-  margin: 20px auto; /* centers it */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
 
 .audio-caption {
   text-align: center;
