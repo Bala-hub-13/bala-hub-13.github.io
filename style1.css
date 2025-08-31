@@ -182,9 +182,9 @@ footer a:hover {
 .webring {
   position: fixed;
   bottom: 0;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
-  text-align: left;
+  text-align: center;
   margin-bottom: 10px; 
   z-index: 9999;
 }
