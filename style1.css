@@ -179,3 +179,17 @@ footer a:hover {
   height: 20px;
   filter: grayscale(100%); 
 }
+.webring {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-bottom: 10px; 
+  z-index: 9999;
+}
+
+.webring img {
+  max-width: 100%; 
+  height: auto;
+}
