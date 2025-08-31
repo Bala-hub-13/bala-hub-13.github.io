@@ -143,6 +143,10 @@ footer a:hover {
   header h2 {
     font-size: 1.6rem;
   }
+    .webring {
+    left: 36%;
+    transform: translateX(-36%);
+  }
 
   .nav-pill {
     padding: 0.25rem 0.6rem;
