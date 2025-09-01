@@ -18,7 +18,10 @@ header {
   padding: 2rem 1rem;
   border-bottom: 1px solid #0e0909;
 }
-
+.blockquote{
+  border-left: 3px solid #c65757 ;/*'#c65757', still confused, help me Oh God of Certainity!  */
+    padding-left: 1rem;
+}
   .breadcrumb {
       position: absolute; 
       left: 20px;
