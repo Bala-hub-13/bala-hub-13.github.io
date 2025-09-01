@@ -19,7 +19,7 @@ header {
   border-bottom: 1px solid #0e0909;
 }
 .blockquote{
-  border-left: 3px solid #c65757 ;/*'#c65757', still confused, help me Oh God of Certainity!  */
+  border-left: 3px solid #ff6b6b ;/*'#c65757', still confused, help me Oh God of Certainity!  */
     padding-left: 1rem;
 }
   .breadcrumb {
@@ -62,7 +62,7 @@ a {
   text-decoration: none;
 }
 h3 {
-  color: #c66;
+  color: #ff6b6b;
   font-family: 'EB Garamond', serif;
   border-bottom: 1px solid #333;
   padding-bottom: 0.2em;
