@@ -149,7 +149,7 @@ footer a:hover {
   height: 20px;
   filter: grayscale(100%); 
 }
-@media (max-width: 600px) {/* Responsive styles for smaller screens */
+@media (max-width: 600px) {/* For smaller screens */
   body {
     font-size: 16px;
     padding: 1.5rem;
@@ -174,6 +174,10 @@ footer a:hover {
 
   .background-cube {
     background-size: 400px;
+  }
+  .social-icons {
+    right: 10px; 
+    bottom: 20px; 
   }
 }
 .bulletin { /* A section for updates */
