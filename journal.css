@@ -3,7 +3,7 @@ body {
   color: #f9f6f4;
   font-family: 'EB Garamond', serif;
   font-size: 18px;
-  max-width: 1000px;
+  max-width: 900px;
   
   line-height: 1.8;/* paragraph spacing  */
   margin: auto;/* Horizontally center the content */
@@ -19,7 +19,7 @@ header {
   border-bottom: 1px solid #0e0909;
 }
 main {
-    border-left: 2px solid #aaa ;/*'#c65757', still confused, help me Oh God of Certainity!  */
+    border-left: 2px solid #aaa ;/*'#c65757', still confused, help me O God of Certainity!  */
     padding-left: 1rem;
 }
 
