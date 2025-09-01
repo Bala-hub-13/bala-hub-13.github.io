@@ -198,7 +198,31 @@
   color: #aaa;
   margin-left: 0.5rem;
 }
+.blockqoute{
+  border-left: 3px solid #c65757 ;/*'#c65757', still confused, help me Oh God of Certainity!  */
+    padding-left: 1rem;
+}
+.image {
+  text-align: center;
+  margin: 1.5rem auto;
+  max-width: 800px;
+}
 
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: filter 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+.image img:hover {
+  transform: scale(1.02);
+}
+.image figcaption {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+  font-style: italic;
 
 
 
