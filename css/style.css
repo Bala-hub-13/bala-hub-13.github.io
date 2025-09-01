@@ -184,7 +184,16 @@
   .background-cube {
     background-size: 400px;
   }
+  .sidenote {
+    float: none;
+    display: block;
+    width: 100%;
+    border-left: none;
+    margin: 0.5em 0;
+    padding: 0;
+  }
 }
+
 .date {
   font-size: 0.9rem;
   font-style:italic;
@@ -224,3 +233,22 @@
   margin-top: 0.5rem;
   font-style: italic;
 }
+.sidenote {
+  float: right;
+  width: 30%;
+  font-size: 0.9em;
+  color: #c65757;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid rgba(198, 87, 87, 0.4);
+  font-style: italic;
+}
+.sidenote a {
+  color: #c65757;
+  text-decoration: none;
+}
+.sidenote a:hover {
+  text-decoration: underline;
+}
+
+
