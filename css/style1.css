@@ -1,173 +1,186 @@
 
-body {
-  background-color: #000000ff;/* Dark background */
-  color: #f9f6f4;
-  font-family: 'EB Garamond', serif;
-  font-size: 19px;
-  line-height: 1.8;
-  max-width: 700px;
-  margin: auto;
-  padding: 2rem;
-}
-small, footer, .audio-caption {
-  font-family: 'DM Sans', sans-serif;
-}
-/* === Background Decoration(Whatever, subject to change) === */
-.home .background-cube {
-  background-image: url('https://bala-hub-13.github.io/assets/Cube_1.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 700px;
-  opacity: 0.15;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 0;
-  pointer-events: none;
-}
+  body {
+    background-color: #000000ff;/* Dark background */
+    color: #f9f6f4;
+    font-family: 'EB Garamond', serif;
+    font-size: 19px;/* The time it took me to finalize */
+    line-height: 1.8;
+    max-width: 700px;/* 700 or 800; will deliberate for eternity */
+    margin: auto;
+    padding: 2rem;
+  }
+  small, footer, .audio-caption {
+    font-family: 'DM Sans', sans-serif;
+  }
+  /* === Background Decoration(Whatever, subject to change) === */
+  .home .background-cube {
+    background-image: url('/assets/cube.png'); /* Got it here - https://ghpages.noahdoersing.com/tixyz/?code=i+%2F+2 - cool site! */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 700px;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;/* Place it behind all other content, Yep! */
+    pointer-events: none;
+  }
+
+  /* Content sits above the background cube */
+  .home .content {
+    position: relative;
+    z-index: 2;
+  }
 
 
-.home .content {
-  position: relative;
-  z-index: 2;
-}
+  header {
+    background-color: #000000ff; 
+    text-align: center;
+    padding: 2rem 1rem;
+  }
 
+  header h1 {
+    margin: 0;
+    color: #ff6b6b;
+    font-size: 2.2rem;
+    letter-spacing: 0.05rem;
+    text-shadow: 1px 1px 2px #000;
+  }
 
-header {
-  background-color: #000000ff; 
-  text-align: center;
-  padding: 2rem 1rem;
-}
+  header p {
+    font-size: 1rem;
+    color: #f6f3f0;
+    margin-top: 0.5rem;
+  }
+  .breadcrumb {
+      position: absolute; 
+      left: 20px;
+      top: 20px; 
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      color: white;
+  }
 
-header h1 {
-  margin: 0;
-  font-size: 2.2rem;
-  letter-spacing: 0.05rem;
-   text-shadow: 1px 1px 2px #000;
-}
+  .breadcrumb a {
+      text-decoration: none;
+      font-style: italic;
+      color: white;
+      font-weight: 500;
+  }
 
-header p {
-  font-size: 1rem;
-  color: #f6f3f0;
-  margin-top: 0.5rem;
-}
+  .breadcrumb span {
+      color: gray; 
+  }
 
-nav {
-  margin-top: 1rem;
-}
+  .breadcrumb a:hover {
+      text-decoration: none;
+      color: #ff6b6b;
+  }
 
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #eae0d5;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-a {
-  color: #ff6b6b;
-  text-decoration: none;
-}
+  nav {
+    margin-top: 1rem;
+  }
 
-a:hover {
-    color: #ff8787;
-  text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
-  text-decoration: none; 
-  transform: translateY(-1px);
-  transition: all 0.2s ease;
-}
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #eae0d5;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  a {
+    color: #ff6b6b;
+    text-decoration: none;
+  }
 
-.nav-pill {
-  display: inline-block;
-  padding: 0.1rem 0.5rem; 
-  margin: 0.2rem;   
-  background-color: #1a1a1a;
-  border-radius: 8px;
-  font-style: italic;
-  color: #ff6b6b;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
+  a:hover {
+      color: #ff6b6b;
+    text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
+    text-decoration: underline;
+    transform: translateY(-2px);/* lift effect */
+    transition: all 0.2s ease;
+  }
 
-.nav-pill:hover {
-  background-color: #2a2a2a;
-  color: #ffa3a3;
-  transform: translateY(-2px);
-  box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3);
-}
+  .nav-pill {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    margin: 0.2rem;   /* Margin for spacing between pills */
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    font-style: italic;
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
 
-main {
-  max-width: 700px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
+  .nav-pill:hover {
+    background-color: #2a2a2a;
+    color: #ffa3a3;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 6px rgba(255, 107, 107, 0.3);
+  }  
 
-section h2 {
-  font-size: 1.5rem;
-  background-color:#000000ff; 
-  border-bottom: 1px solid #4a3f3f;
-  color: #f4f1ee;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-}
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section h2 ,{
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    color: #f4f1ee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
 .Details {
   border-bottom: 1px solid #333;
   font-size: 1.1rem;
   font-style:italic;
-  color: #ffa3a3;
+  color: ##ffa3a3;
 }
 .Details a:hover{
   color: #aaa;
 }
+.excerpts{
+   border-left: 3px solid #ff6b6b;/*'#c65757', still confused, help me Oh God of Certainity!  */
+    padding-left: 1rem;
+}
+  .audio-caption {
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #aaa;
+    padding: 4px;
+  }
+  footer {
+    background-color: #000000ff;
+    border-top: 1px solid #333;
+    color: #a8a6a1;
+  }
+  footer a {
+    color: #ff6b6b;
+    font-family: 'EB Garamond', serif;
+  }
 
-.audio-caption {
-  text-align: center;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #aaa;
-  padding: 8px;
-}
-footer {
-  background-color: #000000ff;
-  border-top: 1px solid #333;
-  color: #a8a6a1;
-}
-footer a {
-  color: #ff6b6b;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.social-icons {
-  position: fixed;
-  bottom: 10px;
-  right: 365px;
-  display: flex;
-  gap: 15px;
-  transition: all 0.3s ease;
-}
-
-.social-icons a img {
-  width: 20px; 
-  height: 20px;
-  filter: grayscale(100%); 
-}
-@media (max-width: 600px) {/* For smaller screens */
+  footer a:hover {
+    text-decoration: underline;
+  }
+@media (max-width: 600px) {/* Responsive styles for smaller screens */
   body {
-    font-size: 17px;
+    font-size: 16px;
     padding: 1.5rem;
   }
-
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
   header h2 {
     font-size: 1.6rem;
-  }
-    .webring {
-    left: 36%;
-    transform: translateX(-36%);
   }
 
   .nav-pill {
@@ -176,37 +189,77 @@ footer a:hover {
   }
 
   main {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   .background-cube {
     background-size: 400px;
   }
-  .social-icons {
-    right: 10px; 
-    bottom: 15px; 
+  .sidenote {
+    float: none;
+    display: block;
+    width: 100%;
+    border-left: none;
+    margin: 0.5em 0;
+    padding: 0;
   }
-}  
-.bulletin { /* A section for updates */
-  margin-top: 1.5rem;
-  background-color: #111;
-  padding: 1rem;
-  border-radius: 12px;
-  border: 1px solid #222;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
-.webring {
-  position: fixed;
-  bottom: 0;
-  left: 36%;
-  transform: translateX(-50%);
+.date {
+  font-size: 0.9rem;
+  font-style:italic;
+  float : right;
+  color: #aaa;
+  margin-right: 8px;
+}
+.log_gist {
+  font-size: 1.1rem;
+  font-style:italic;
+  color: #aaa;
+  margin-left: 0.5rem;
+}
+.blockquote{
+  border-left: 3px solid #ff6b6b;/*'#c65757', still confused, help me Oh God of Certainity!  */
+    padding-left: 1rem;
+}
+.image {
   text-align: center;
-  margin-bottom: 10px; 
-  z-index: 9999;
+  margin: 1.5rem auto;
+  max-width: 800px;
 }
 
-.webring img {
-  max-width: 100%; 
+.image img {
+  width: 100%;
   height: auto;
+  border-radius: 10px;
+  transition: filter 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+.image img:hover {
+  transform: scale(1.02);
+}
+.image figcaption {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+.sidenote {
+  float: right;
+  width: 30%;
+  font-size: 0.9em;
+  color: #c65757;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid rgba(198, 87, 87, 0.4);
+  font-style: italic;
+}
+.sidenote a {
+  color: #c65757;
+  text-decoration: none;
+}
+.sidenote a:hover {
+  text-decoration: underline;
+}
+
+
