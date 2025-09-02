@@ -112,7 +112,15 @@ section h2 {
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
-
+.Details {
+  border-bottom: 1px solid #333;
+  font-size: 1.1rem;
+  font-style:italic;
+  color: #ffa3a3;
+}
+.Details a:hover{
+  color: #aaa;
+}
 
 .audio-caption {
   text-align: center;
