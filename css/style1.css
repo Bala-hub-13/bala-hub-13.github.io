@@ -178,7 +178,12 @@ footer a:hover {
     right: 10px; 
     bottom: 15px; 
   }
-}
+  .social-icons a img {
+  width: 20px; 
+  height: 20px;
+  filter: grayscale(100%); 
+  }
+}  
 .bulletin { /* A section for updates */
   margin-top: 1.5rem;
   background-color: #111;
