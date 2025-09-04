@@ -1,7 +1,7 @@
 
   body {
     background-color: #000000ff;/* Dark background */
-    color: #f9f6f4;
+    color: #f4f1ee;
     font-family: 'EB Garamond', serif;
     font-size: 19px;/* The time it took me to finalize */
     line-height: 1.8;
@@ -51,7 +51,7 @@
 
   header p {
     font-size: 1rem;
-    color: #f6f3f0;
+    color: #f4f1ee;
     margin-top: 0.5rem;
   }
   .breadcrumb {
