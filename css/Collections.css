@@ -2,7 +2,7 @@
   body {
     background-color: #000000ff;/* Dark background */
     color: #f4f1ee;
-   font: 16px 'EB Garamond', serif;
+    font: 15px "Palatino", "Book Antiqua", "Optima", "Arial", sans-serif;
     line-height: 1.8;
     max-width: 700px;/* 700 or 800; will deliberate for eternity */
     margin: auto;
