@@ -1,0 +1,128 @@
+
+  body {
+    background-color: #000000ff;/* Dark background */
+    color: #f4f1ee;
+   font: 15px "Palatino", "Book Antiqua", "Optima", "Arial", sans-serif;
+    line-height: 1.8;
+    max-width: 700px;/* 700 or 800; will deliberate for eternity */
+    margin: auto;
+    padding: 2rem;
+  }
+
+  header {
+    background-color: #000000ff; 
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  header h1 {
+    margin: 0;
+    color: #f4f1ee;
+    font-size: 2.2rem;
+    letter-spacing: 0.05rem;
+    text-shadow: 1px 1px 2px #000;
+  }
+  .breadcrumb {
+      position: absolute; 
+      left: 20px;
+      top: 20px; 
+      font-family: 'EB Garamond', serif;
+      font-size: 18px;
+      color: white;
+  }
+
+  .breadcrumb a {
+      text-decoration: none;
+      font-style: italic;
+      color: white;
+      font-weight: 500;
+  }
+
+  .breadcrumb span {
+      color: gray; 
+  }
+
+  .breadcrumb a:hover {
+      text-decoration: none;
+      color: #ff6b6b;
+  }
+.source {
+  color: #ff6b6b;
+  margin-top: 1rem;
+}
+.content {
+  border-bottom: 1px solid #333;
+}
+.reference {
+  color: gray;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #eae0d5;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  a {
+    color: #ff6b6b;
+    text-decoration: none;
+  }
+
+  a:hover {
+      color: #ff6b6b;
+    text-shadow: 0 0 3px rgba(255, 107, 107, 0.5);
+    text-decoration: underline;
+    transform: translateY(-2px);/* lift effect */
+    transition: all 0.2s ease;
+  }
+
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #333;
+    color: #f4f1ee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  footer {
+    background-color: #000000ff;
+    border-top: 1px solid #333;
+    color: #a8a6a1;
+  }
+  footer a {
+    color: #ff6b6b;
+    font-family: 'EB Garamond', serif;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+@media (max-width: 600px) {/* Responsive styles for smaller screens */
+  body {
+    font-size: 16px;
+    padding: 1.5rem;
+  }
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  header h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
