@@ -121,6 +121,9 @@
   header h2 {
     font-size: 1.6rem;
   }
+  main {
+    padding: 0 0.5rem;
+  }
 }
 
 
