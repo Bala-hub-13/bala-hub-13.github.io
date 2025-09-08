@@ -52,8 +52,15 @@
   margin-top: 1rem;
 }
 .content {
+  color: #b3b3b3; /* Slightly muted text */
+  transition: color 0.3s ease;
   border-bottom: 1px solid #333;
 }
+
+.content:hover {
+  color: #f4f1ee; /* Full white text on hover */
+}
+
 .reference {
   color: gray;
   font-size: 0.9rem;
