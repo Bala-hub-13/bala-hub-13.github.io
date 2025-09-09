@@ -194,10 +194,9 @@
 }
 
 .date {
-  font-size: 0.9rem;
+  font-size: 0.99rem;
   font-style:italic;
   float : right;
-  color: #aaa;
   margin-right: 8px;
 }
 .log_gist {
@@ -249,5 +248,18 @@
 .sidenote a:hover {
   text-decoration: underline;
 }
+.with-date .date {
+  opacity: 0;
+  margin-left: 0.5em;
+  font-style: italic;
+  color: #c65757; 
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  transform: translateY(-2px);
+}
 
+.with-date:hover .date {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+  
