@@ -200,10 +200,16 @@
   margin-right: 8px;
 }
 .log_gist {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-style:italic;
   color: #aaa;
   margin-left: 0.5rem;
+}
+.log-title{
+  font-style:italic;
+  color: #aaa;
+  text-align: left;
+  border-bottom: 1px solid #333;
 }
 .blockquote{
   border-left: 3px solid #ff6b6b;/*'#c65757', still confused, help me Oh God of Certainity!  */
@@ -261,5 +267,3 @@
   color: #c65757;
   transform: translateY(0);
 }
-
-  
