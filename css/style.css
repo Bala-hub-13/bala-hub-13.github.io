@@ -249,16 +249,16 @@
   text-decoration: underline;
 }
 .with-date .date {
-  opacity: 0;
   margin-left: 0.5em;
   font-style: italic;
-  color: #c65757; 
+  color: #aaa; 
   transition: opacity 0.4s ease, transform 0.3s ease;
   transform: translateY(-2px);
 }
 
 .with-date:hover .date {
   opacity: 1;
+  color: #c65757;
   transform: translateY(0);
 }
 
