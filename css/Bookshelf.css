@@ -130,10 +130,11 @@ footer a:hover {
 }
 
 .archive li {
-  font-size: 0.98rem;
+  font-size: 0.97rem;
   color: #e2e2e2;
   margin-bottom: 0.5rem;
   font-style: italic;
+  font-family: 'Palatino', sans-serif;
 }
 /* Distinction between reflection and book listings */
 .year-section p {
