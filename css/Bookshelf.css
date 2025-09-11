@@ -124,6 +124,14 @@ footer a:hover {
   margin-bottom: 3rem;
 }
 
+.archive h3 {
+  margin-top: 2rem;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
 .archive ul {
   list-style-type: disc;
   margin-left: 1.5rem;
@@ -189,14 +197,6 @@ footer a:hover {
   font-style: italic;
 }
 
-/* Archive Section tweaks */
-.archive h3 {
-  margin-top: 2rem;
-  color: #ff6b6b;
-  font-size: 1.2rem;
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.3rem;
-}
 
 /* Literal Club */
 .literalclub {
@@ -235,4 +235,15 @@ summary:hover {
 
 details[open] summary {
   color: #f2eeeb;
+}
+@media (max-width: 600px) {/* Responsive styles for smaller screens */
+  body {
+    font-size: 16px;
+    padding: 1.5rem;
+  }
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
 }
