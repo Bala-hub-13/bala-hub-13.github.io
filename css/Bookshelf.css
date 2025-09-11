@@ -19,7 +19,7 @@ main {
   max-width: 800px;
 }
 
-.h1 {
+.header, h1 {
   text-align: center;
 }
 .year-section {
@@ -159,4 +159,80 @@ footer a:hover {
   font-style: italic;
   color: #f2eeeb; 
   font-family: 'Palatino', sans-serif;
+}
+/* Currently Reading */
+.currently-reading {
+  background: #111;
+  border-left: 3px solid #ff6b6b;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  
+}
+
+.currently-reading h2 {
+  font-size: 1.4rem;
+  color: #ff6b6b;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.currently-reading ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.currently-reading li {
+  color: #f2eeeb;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+/* Archive Section tweaks */
+.archive h3 {
+  margin-top: 2rem;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.3rem;
+}
+
+/* Literal Club */
+.literalclub {
+  margin: 1rem 0;
+  padding: 0rem;
+  text-align: left;
+  border-top: 1px solid #333;
+}
+
+.literalclub a {
+  color: #c66;
+  text-decoration: underline;
+}
+
+.literalclub a:hover {
+  color: #ff6b6b;
+}
+details {
+  margin: 1rem 0;
+  background: #111;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #c66;
+  margin-bottom: 0.5rem;
+}
+
+summary:hover {
+  color: #fff;
+}
+
+details[open] summary {
+  color: #f2eeeb;
 }
