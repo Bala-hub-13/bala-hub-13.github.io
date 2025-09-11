@@ -1,2 +1,2 @@
-# Hello!
-### This is a personal site! I hope that was useful.
+
+### Have headphones on for the occasional rants and logs.
