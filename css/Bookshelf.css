@@ -236,6 +236,7 @@ summary:hover {
 details[open] summary {
   color: #f2eeeb;
 }
+
 @media (max-width: 600px) {/* Responsive styles for smaller screens */
   body {
     font-size: 16px;
@@ -245,5 +246,12 @@ details[open] summary {
     max-width: 700px;
     margin: 2rem auto;
     padding: 0 1rem;
+  }
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  main {
+    padding: 0 0.5rem;
   }
 }
