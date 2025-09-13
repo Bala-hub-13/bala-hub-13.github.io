@@ -267,3 +267,14 @@
   color: #c65757;
   transform: translateY(0);
 }
+.bio {
+  border-top: 2px solid;
+}
+.bio a {
+  color: gray;
+  text-decoration: underline;
+}
+.bio a:hover {
+  color: #ff6b6b;
+  text-decoration: none;
+}
