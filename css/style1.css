@@ -157,17 +157,17 @@ footer a:hover {
   filter: grayscale(100%); 
 }
 @media (max-width: 600px) {/* For smaller screens */
-  body {
-    font-size: 17px;
+   body {
+    font-size: 16px;
     padding: 1.5rem;
   }
-
+  main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
   header h2 {
     font-size: 1.6rem;
-  }
-    .webring {
-    left: 36%;
-    transform: translateX(-36%);
   }
 
   .nav-pill {
@@ -176,17 +176,24 @@ footer a:hover {
   }
 
   main {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
   }
 
   .background-cube {
     background-size: 400px;
   }
+  
+    .webring {
+    left: 36%;
+    transform: translateX(-36%);
+  }
+
   .social-icons {
     right: 10px; 
     bottom: 15px; 
   }
-}  
+}
+ 
 .bulletin { /* A section for updates */
   margin-top: 1.5rem;
   background-color: #111;
