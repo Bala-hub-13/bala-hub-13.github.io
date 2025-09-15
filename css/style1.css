@@ -1,7 +1,7 @@
 
 body {
   background-color: #000000ff;/* Dark background */
-  color: #f4f1ee;
+  color:  white;
   font-family: 'EB Garamond', serif;
   font-size: 19px;
   line-height: 1.8;
@@ -50,7 +50,7 @@ header h1 {
 
 header p {
   font-size: 1rem;
-  color: #f6f3f0;
+  color: #ffffff;
   margin-top: 0.5rem;
 }
 
@@ -108,7 +108,7 @@ section h2 {
   font-size: 1.5rem;
   background-color:#000000ff; 
   border-bottom: 1px solid #4a3f3f;
-  color: #f4f1ee;
+  color: #ffffff;
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
