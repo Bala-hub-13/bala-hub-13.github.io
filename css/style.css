@@ -278,11 +278,10 @@
   color: #ff6b6b;
   text-decoration: none;
 }
-/* Remove default triangle */
 .bio-toggle summary {
   list-style: none;
   cursor: pointer;
-  color: #e46b6b; /* soft red to match headings */
+  color: #e46b6b;
   font-style: italic;
   transition: color 0.2s ease;
 }
@@ -292,10 +291,9 @@
 }
 
 .bio-toggle summary:hover {
-  color: #ff8080; /* lighter red hover */
+  color: #ff8080; 
 }
 
-/* Inner sections styling */
 .inner-section {
   margin-top: 1.2em;
   padding-left: 1em;
