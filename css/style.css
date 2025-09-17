@@ -278,3 +278,31 @@
   color: #ff6b6b;
   text-decoration: none;
 }
+/* Remove default triangle */
+.bio-toggle summary {
+  list-style: none;
+  cursor: pointer;
+  color: #e46b6b; /* soft red to match headings */
+  font-style: italic;
+  transition: color 0.2s ease;
+}
+
+.bio-toggle summary::-webkit-details-marker {
+  display: none;
+}
+
+.bio-toggle summary:hover {
+  color: #ff8080; /* lighter red hover */
+}
+
+/* Inner sections styling */
+.inner-section {
+  margin-top: 1.2em;
+  padding-left: 1em;
+  border-left: 1px solid #333;
+}
+
+.inner-section h3 {
+  margin-bottom: 0.3em;
+  color: #fff;
+}
