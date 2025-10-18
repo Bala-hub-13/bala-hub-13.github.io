@@ -168,35 +168,6 @@ footer a:hover {
   color: #f2eeeb; 
   font-family: 'Palatino', sans-serif;
 }
-/* Currently Reading */
-.currently-reading {
-  background: #111;
-  border-left: 3px solid #ff6b6b;
-  padding: 1rem 1.5rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-  
-}
-
-.currently-reading h2 {
-  font-size: 1.4rem;
-  color: #ff6b6b;
-  padding: 1rem 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.currently-reading ul {
-  margin: 0;
-  padding-left: 1rem;
-}
-
-.currently-reading li {
-  color: #f2eeeb;
-  font-size: 1.05rem;
-  margin-bottom: 0.5rem;
-  font-style: italic;
-}
-
 
 /* Literal Club */
 .literalclub {
