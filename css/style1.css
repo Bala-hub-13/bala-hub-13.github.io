@@ -104,6 +104,12 @@ main {
   padding: 0 1rem;
 }
 
+.timeline {
+  font-size: 1.2rem;
+  font-style:italic;
+  color: #eb6565;
+}
+
 section h2 {
   font-size: 1.5rem;
   background-color:#000000ff; 
